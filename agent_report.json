@@ -1,0 +1,12 @@
+{
+  "project_name": "Bank Service",
+  "findings": [
+    {
+      "id": "ERR_LOGIC_001",
+      "target_function": "withdraw",
+      "severity": "CRITICAL",
+      "description_vi": "Lỗi logic nghiệp vụ: Docstring yêu cầu 'rút tiền' (giảm balance), nhưng mã nguồn lại dùng '+=' làm tăng balance.",
+      "current_code": "self.balance += amount"
+    }
+  ]
+}
